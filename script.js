@@ -5,15 +5,45 @@ fetch("items.json")
     .then(data => {
         items = data;
         renderItems();
+        createAlphabetNav();
     });
 
 const container = document.getElementById("itemsContainer");
+const alphabetNav = document.getElementById("alphabetNav");
 
 function renderItems() {
 
     container.innerHTML = "";
 
-    items.forEach((item, index) => {
+    // Keep original index for export
+    const displayItems = items.map((item, index) => ({
+        ...item,
+        originalIndex: index
+    }));
+
+    // Alphabetical display only
+    displayItems.sort((a, b) =>
+        a.name.localeCompare(b.name)
+    );
+
+    let currentLetter = "";
+
+    displayItems.forEach((item) => {
+
+        const firstLetter = item.name.charAt(0).toUpperCase();
+
+        if (firstLetter !== currentLetter) {
+
+            currentLetter = firstLetter;
+
+            const letterHeader = document.createElement("div");
+            letterHeader.className = "letter-header";
+            letterHeader.id = `letter-${currentLetter}`;
+
+            letterHeader.textContent = currentLetter;
+
+            container.appendChild(letterHeader);
+        }
 
         const card = document.createElement("div");
         card.className = "item-card";
@@ -21,11 +51,11 @@ function renderItems() {
         card.innerHTML = `
             <div class="item-title">${item.name}</div>
 
-            <div class="variants" id="variants-${index}"></div>
+            <div class="variants" id="variants-${item.originalIndex}"></div>
 
             <button
                 class="add-type"
-                onclick="addVariant(${index})">
+                onclick="addVariant(${item.originalIndex})">
                 + Additional Type
             </button>
         `;
@@ -35,16 +65,41 @@ function renderItems() {
         if (item.types && item.types.length > 0) {
 
             item.types.forEach(type => {
-                createVariantRow(index, type);
+                createVariantRow(item.originalIndex, type);
             });
 
         } else {
 
-            createVariantRow(index, item.name);
+            createVariantRow(item.originalIndex, item.name);
 
         }
 
     });
+
+}
+
+function createAlphabetNav() {
+
+    alphabetNav.innerHTML = "";
+
+    const letters = new Set();
+
+    items.forEach(item => {
+        letters.add(item.name.charAt(0).toUpperCase());
+    });
+
+    [...letters]
+        .sort()
+        .forEach(letter => {
+
+            const link = document.createElement("a");
+
+            link.href = `#letter-${letter}`;
+            link.textContent = letter;
+
+            alphabetNav.appendChild(link);
+
+        });
 
 }
 
@@ -95,6 +150,7 @@ document
         let buoItems = [];
         let chichiryaItems = [];
 
+        // Export still follows ORIGINAL JSON ORDER
         items.forEach((item, index) => {
 
             const rows = document.querySelectorAll(
@@ -135,10 +191,23 @@ document
 
                 let line;
 
-                if (type === item.name) {
-                    line = `${quantityText} ${item.name}`;
+                // School Supplies Exception
+                if (item.name === "School Supplies") {
+
+                    if (type === item.name || !type) {
+                        line = `${quantityText} School Supplies`;
+                    } else {
+                        line = `${quantityText} ${type}`;
+                    }
+
                 } else {
-                    line = `${quantityText} ${item.name} ${type}`;
+
+                    if (type === item.name) {
+                        line = `${quantityText} ${item.name}`;
+                    } else {
+                        line = `${quantityText} ${item.name} ${type}`;
+                    }
+
                 }
 
                 if (isBuo) {

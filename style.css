@@ -8,6 +8,7 @@ body{
     font-family:Arial, sans-serif;
     background:#f4f6f9;
     padding:20px;
+    padding-right:60px;
     max-width:900px;
     margin:auto;
 }
@@ -127,4 +128,49 @@ input[type="checkbox"]{
     background:white;
     font-size:24px;
     line-height:1.5;
+}
+
+/* ========================================= */
+/* Alphabet Navigation */
+/* ========================================= */
+
+.alphabet-nav{
+    position:fixed;
+    right:8px;
+    top:50%;
+    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+    z-index:999;
+    background:rgba(255,255,255,0.9);
+    padding:6px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.alphabet-nav a{
+    text-decoration:none;
+    color:#374151;
+    font-size:18px;
+    font-weight:bold;
+    text-align:center;
+    padding:2px;
+}
+
+.alphabet-nav a:hover{
+    color:#2563eb;
+}
+
+/* ========================================= */
+/* Letter Headers */
+/* ========================================= */
+
+.letter-header{
+    font-size:42px;
+    font-weight:bold;
+    margin:30px 0 15px;
+    color:#2563eb;
+    border-bottom:3px solid #2563eb;
+    padding-bottom:5px;
 }

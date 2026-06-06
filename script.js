@@ -1,6 +1,6 @@
 let items = [];
 
-fetch("items.json")
+fetch(`items.json?v=${Date.now()}`)
     .then(response => response.json())
     .then(data => {
         items = data;

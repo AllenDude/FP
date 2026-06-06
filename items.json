@@ -1,0 +1,189 @@
+[
+{
+  "name": "Homi",
+  "category": "general",
+  "types": ["Beef", "Chicken"]
+},
+{
+  "name": "Arina",
+  "category": "general",
+  "types": ["3rd Class"]
+},
+{ "name": "Asin", "category": "general", "types": [] },
+{ "name": "Milagrosa", "category": "general", "types": [] },
+{ "name": "Hobe", "category": "general", "types": [] },
+{ "name": "Komeya", "category": "general", "types": [] },
+
+{ "name": "Nature's Spring", "category": "general", "types": [] },
+{ "name": "Refresh", "category": "general", "types": [] },
+
+{ "name": "Cobra", "category": "general", "types": [] },
+{ "name": "Sting", "category": "general", "types": [] },
+{ "name": "Mountain Dew", "category": "general", "types": [] },
+
+{
+"name": "EZ",
+"category": "general",
+"types": ["Choco", "Milk", "Cheese"]
+},
+
+{
+  "name": "Super Crunch",
+  "category": "general",
+  "types": ["55gx10"]
+},
+{ "name": "Tattoos", "category": "general", "types": [] },
+{ "name": "Yumshots", "category": "general", "types": [] },
+
+{ "name": "Wrinkles Raisins", "category": "general", "types": [] },
+
+{ "name": "Master Gulaman", "category": "general", "types": [] },
+{ "name": "Delicious Margarine", "category": "general", "types": [] },
+{ "name": "Daily Queso", "category": "general", "types": [] },
+
+{ "name": "All-Purpose Flour", "category": "general", "types": [] },
+{ "name": "Cassava Flour", "category": "general", "types": [] },
+{ "name": "Cornstarch", "category": "general", "types": [] },
+
+{ "name": "Misua", "category": "general", "types": [] },
+
+{
+"name": "Unipak",
+"category": "general",
+"types": ["Squid", "Mackerel"]
+},
+
+{
+"name": "555",
+"category": "general",
+"types": ["Sardines"]
+},
+
+{
+"name": "Youngs Town",
+"category": "general",
+"types": ["Red", "Green", "Mackerel"]
+},
+
+{
+"name": "Stateside Paminta",
+"category": "general",
+"types": ["Durog", "Buo"]
+},
+
+{ "name": "Ajinomoto", "category": "general", "types": [] },
+{ "name": "Ginisa", "category": "general", "types": [] },
+{ "name": "Doreen", "category": "general", "types": [] },
+{ "name": "Mogu-Mogu", "category": "general", "types": [] },
+
+{
+"name": "Knorr Sinigang",
+"category": "general",
+"types": ["Original", "Gabi", "Isda"]
+},
+
+{
+"name": "Her-C",
+"category": "general",
+"types": [
+"Laurel",
+"Star Anis",
+"Sibut 20g",
+"Sibut 10g",
+"Curry Powder",
+"Sesame Seeds 20g"
+]
+},
+
+{
+"name": "Payless",
+"category": "general",
+"types": [
+"Chicken Noodles",
+"Beef Noodles",
+"Xtra Big Pancit Canton"
+]
+},
+
+{ "name": "Mothers Best Caldereta Mix", "category": "general", "types": [] },
+{ "name": "Lasap Gata", "category": "general", "types": [] },
+{ "name": "Calumet", "category": "general", "types": [] },
+{ "name": "Gawgaw", "category": "general", "types": [] },
+{ "name": "Mega Prime Whole Corn", "category": "general", "types": [] },
+
+{
+"name": "Argentina",
+"category": "general",
+"types": ["Meat Loaf", "Corned Beef"]
+},
+
+{ "name": "Choco Mucho", "category": "general", "types": [] },
+{ "name": "Cloud 9", "category": "general", "types": [] },
+{ "name": "Beng Beng", "category": "general", "types": [] },
+{ "name": "Gumball", "category": "general", "types": [] },
+{ "name": "Barnuts", "category": "general", "types": [] },
+
+{
+"name": "Lucky Me",
+"category": "general",
+"types": [
+"Chicken Noodles",
+"Beef Noodles",
+"Pancit Canton"
+]
+},
+
+{ "name": "Dutchmill", "category": "general", "types": [] },
+{ "name": "Richeese", "category": "general", "types": [] },
+{ "name": "Richoco", "category": "general", "types": [] },
+{ "name": "JB Bagoong", "category": "general", "types": [] },
+
+{ "name": "Zest-O", "category": "general", "types": [] },
+{ "name": "Koolers", "category": "general", "types": [] },
+
+{ "name": "DingDong", "category": "general", "types": [] },
+{ "name": "Happy", "category": "general", "types": [] },
+{ "name": "Dragon Sid", "category": "general", "types": [] },
+{ "name": "Muncher", "category": "general", "types": [] },
+
+{ "name": "Softee", "category": "general", "types": [] },
+{ "name": "Flat Tops", "category": "general", "types": [] },
+{ "name": "Rebisco", "category": "general", "types": [] },
+{ "name": "Hansel", "category": "general", "types": [] },
+{ "name": "Iced Gem", "category": "general", "types": [] },
+{ "name": "Doowee", "category": "general", "types": [] },
+{ "name": "Fudgee", "category": "general", "types": [] },
+{ "name": "Sky Flakes", "category": "general", "types": [] },
+{ "name": "Fita", "category": "general", "types": [] },
+
+{ "name": "Chelly", "category": "general", "types": [] },
+{ "name": "Mentos", "category": "general", "types": [] },
+{ "name": "Snowbear", "category": "general", "types": [] },
+
+{ "name": "Tops", "category": "cleaning", "types": [] },
+{ "name": "School Supplies", "category": "cleaning", "types": [] },
+{ "name": "Kapas", "category": "cleaning", "types": [] },
+{ "name": "Tissue", "category": "cleaning", "types": [] },
+{ "name": "Posporo", "category": "cleaning", "types": [] },
+{ "name": "A&D Candle", "category": "cleaning", "types": [] },
+{ "name": "Lastiko", "category": "cleaning", "types": [] },
+{ "name": "Lampein", "category": "cleaning", "types": [] },
+{ "name": "Baby Wipes", "category": "cleaning", "types": [] },
+{ "name": "EQ", "category": "cleaning", "types": [] },
+{ "name": "Pantyliners", "category": "cleaning", "types": [] },
+{ "name": "LT Katol", "category": "cleaning", "types": [] },
+{ "name": "Hairworks Gel", "category": "cleaning", "types": [] },
+{ "name": "Rexona", "category": "cleaning", "types": [] },
+{ "name": "Off", "category": "cleaning", "types": [] },
+{ "name": "Kiwi", "category": "cleaning", "types": [] },
+
+{ "name": "Bench", "category": "cleaning", "types": [] },
+{ "name": "Luis and Pearl", "category": "cleaning", "types": [] },
+{ "name": "Juicy", "category": "cleaning", "types": [] },
+
+{ "name": "Baby Oil", "category": "cleaning", "types": [] },
+{ "name": "Silka", "category": "cleaning", "types": [] },
+{ "name": "Zonrox", "category": "cleaning", "types": [] },
+{ "name": "Wings", "category": "cleaning", "types": [] },
+{ "name": "Pride", "category": "cleaning", "types": [] }
+]

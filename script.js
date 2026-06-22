@@ -105,154 +105,182 @@ function createAlphabetNav() {
 
 function createVariantRow(itemIndex, typeName = "") {
 
-    const holder = document.getElementById(`variants-${itemIndex}`);
+const holder = document.getElementById(`variants-${itemIndex}`);
 
-    const row = document.createElement("div");
-    row.className = "variant-row";
+const row = document.createElement("div");
+row.className = "variant-row";
 
-    row.innerHTML = `
-        <input
-            class="variant-name"
-            type="text"
-            value="${typeName}"
-            placeholder="Type"
-        >
+row.innerHTML = `
+    <input
+        class="variant-name"
+        type="text"
+        value="${typeName}"
+        placeholder="Type"
+    >
 
-        <input
-            class="pieces"
-            type="text"
-            placeholder="Qty"
-        >
+    <input
+        class="pieces"
+        type="text"
+        placeholder="Qty"
+    >
 
-        <label>
-            <input type="checkbox" class="buo">
-            Buo
-        </label>
+    <label>
+        <input type="checkbox" class="buo">
+        Buo
+    </label>
 
-        <label>
-            <input type="checkbox" class="chichirya">
-            Chichirya
-        </label>
-    `;
+    <label>
+        <input type="checkbox" class="chichirya">
+        Chichirya
+    </label>
 
-    holder.appendChild(row);
+    <label>
+        <input type="checkbox" class="promo">
+        Promo
+    </label>
+`;
+
+holder.appendChild(row);
+
 }
 
 function addVariant(itemIndex) {
-    createVariantRow(itemIndex);
+createVariantRow(itemIndex);
 }
 
 document
-    .getElementById("exportBtn")
-    .addEventListener("click", () => {
+.getElementById("exportBtn")
+.addEventListener("click", () => {
 
-        let normalItems = [];
-        let buoItems = [];
-        let chichiryaItems = [];
+    let normalItems = [];
+    let buoItems = [];
+    let chichiryaItems = [];
+    let promoItems = [];
 
-        // Export still follows ORIGINAL JSON ORDER
-        items.forEach((item, index) => {
+    // Export still follows ORIGINAL JSON ORDER
+    items.forEach((item, index) => {
 
-            const rows = document.querySelectorAll(
-                `#variants-${index} .variant-row`
-            );
+        const rows = document.querySelectorAll(
+            `#variants-${index} .variant-row`
+        );
 
-            rows.forEach(row => {
+        rows.forEach(row => {
 
-                const type = row
-                    .querySelector(".variant-name")
-                    .value
-                    .trim();
+            const type = row
+                .querySelector(".variant-name")
+                .value
+                .trim();
 
-                const qty = row
-                    .querySelector(".pieces")
-                    .value
-                    .trim();
+            const qty = row
+                .querySelector(".pieces")
+                .value
+                .trim();
 
-                const isBuo = row
-                    .querySelector(".buo")
-                    .checked;
+            const isBuo = row
+                .querySelector(".buo")
+                .checked;
 
-                const isChichirya = row
-                    .querySelector(".chichirya")
-                    .checked;
+            const isChichirya = row
+                .querySelector(".chichirya")
+                .checked;
 
-                if (!qty) {
-                    return;
-                }
+            const isPromo = row
+                .querySelector(".promo")
+                .checked;
 
-                let quantityText;
+            if (!qty) {
+                return;
+            }
 
-                if (/^\d+$/.test(qty)) {
-                    quantityText = `${qty}pcs.`;
+            let quantityText;
+
+            if (/^\d+$/.test(qty)) {
+                quantityText = `${qty}pcs.`;
+            } else {
+                quantityText = qty;
+            }
+
+            let line;
+
+            // School Supplies Exception
+            if (item.name === "School Supplies") {
+
+                if (type === item.name || !type) {
+                    line = `${quantityText} School Supplies`;
                 } else {
-                    quantityText = qty;
+                    line = `${quantityText} ${type}`;
                 }
 
-                let line;
+            } else {
 
-                // School Supplies Exception
-                if (item.name === "School Supplies") {
-
-                    if (type === item.name || !type) {
-                        line = `${quantityText} School Supplies`;
-                    } else {
-                        line = `${quantityText} ${type}`;
-                    }
-
+                if (type === item.name) {
+                    line = `${quantityText} ${item.name}`;
                 } else {
-
-                    if (type === item.name) {
-                        line = `${quantityText} ${item.name}`;
-                    } else {
-                        line = `${quantityText} ${item.name} ${type}`;
-                    }
-
+                    line = `${quantityText} ${item.name} ${type}`;
                 }
 
-                if (isBuo) {
-                    buoItems.push(line);
-                }
-                else if (isChichirya) {
-                    chichiryaItems.push(line);
-                }
-                else {
-                    normalItems.push(line);
-                }
+            }
 
-            });
+            if (isBuo) {
+                buoItems.push(line);
+            }
+            else if (isChichirya) {
+                chichiryaItems.push(line);
+            }
+            else if (isPromo) {
+                promoItems.push(line);
+            }
+            else {
+                normalItems.push(line);
+            }
 
         });
 
-        let result = "ORENCIO MENDOZA\n\n";
-
-        if (normalItems.length > 0) {
-            result += normalItems.join("\n");
-        }
-
-        if (buoItems.length > 0) {
-
-            if (result.trim() !== "ORENCIO MENDOZA") {
-                result += "\n\n";
-            }
-
-            result += "BUO\n\n";
-            result += buoItems.join("\n");
-        }
-
-        if (chichiryaItems.length > 0) {
-
-            if (
-                normalItems.length > 0 ||
-                buoItems.length > 0
-            ) {
-                result += "\n\n";
-            }
-
-            result += "CHICHIRYA\n\n";
-            result += chichiryaItems.join("\n");
-        }
-
-        document.getElementById("output").value = result;
-
     });
+
+    let result = "ORENCIO MENDOZA\n\n";
+
+    if (normalItems.length > 0) {
+        result += normalItems.join("\n");
+    }
+
+    if (buoItems.length > 0) {
+
+        if (result.trim() !== "ORENCIO MENDOZA") {
+            result += "\n\n";
+        }
+
+        result += "BUO\n\n";
+        result += buoItems.join("\n");
+    }
+
+    if (chichiryaItems.length > 0) {
+
+        if (
+            normalItems.length > 0 ||
+            buoItems.length > 0
+        ) {
+            result += "\n\n";
+        }
+
+        result += "CHICHIRYA\n\n";
+        result += chichiryaItems.join("\n");
+    }
+
+    if (promoItems.length > 0) {
+
+        if (
+            normalItems.length > 0 ||
+            buoItems.length > 0 ||
+            chichiryaItems.length > 0
+        ) {
+            result += "\n\n";
+        }
+
+        result += "PROMO\n\n";
+        result += promoItems.join("\n");
+    }
+
+    document.getElementById("output").value = result;
+
+});

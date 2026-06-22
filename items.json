@@ -111,9 +111,9 @@
   "name": "EC",
   "category": "general",
   "types": [
-    "Choco",
-    "Milk",
-    "Cheese"
+    "Choco 60g x10",
+    "Milk 60g x10",
+    "Cheese 60g x10"
   ]
 },
 
@@ -152,6 +152,65 @@
   "name": "Delicious Margarine",
   "category": "general",
   "types": []
+},
+{
+  "name": "Reno",
+  "category": "general",
+  "types": [
+    "Liver Spread Small"
+  ]
+},
+{
+  "name": "Papa Ketchup",
+  "category": "general",
+  "types": [
+    "Pouch 200g"
+  ]
+},
+{
+  "name": "Chuckie",
+  "category": "general",
+  "types": [
+    "110ml"
+  ]
+},
+{
+  "name": "Vitasoy",
+  "category": "general",
+  "types": [
+    "Original",
+    "Chocolate"
+  ]
+},
+{
+  "name": "Knorr",
+  "category": "general",
+  "types": [
+    "Chicken Cubes",
+    "Pork Cubes",
+    "Beef Cubes",
+    "Sinigang"
+  ]
+},
+{
+  "name": "Gatorade",
+  "category": "general",
+  "types": [
+    "Blue 350ml",
+    "Blue 500ml"
+  ]
+},
+{
+  "name": "Karoke",
+  "category": "general",
+  "types": []
+},
+{
+  "name": "Emperador",
+  "category": "general",
+  "types": [
+    "Double Light Lapad"
+  ]
 },
 {
   "name": "Daily Queso",
@@ -221,7 +280,8 @@
   "name": "Ajinomoto",
   "category": "general",
   "types": [
-    "Vetsin 11g x18"
+    "Vetsin 11g x18",
+    "Vetsin 24g x8"
   ]
 },
 
@@ -274,11 +334,13 @@
   "types": [
     "Chicken Noodles",
     "Beef Noodles",
-    "Xtra Big Pancit Canton"
+    "Xtra Big Pancit Canton Kalamansi",
+    "Xtra Big Pancit Canton Chilimansi",
+    "Xtra Big Pancit Canton Sweet & Spicy"
   ]
 },
 
-{ 
+{
   "name": "Mothers Best Caldereta Mix",
   "category": "general",
   "types": []
@@ -355,7 +417,11 @@
   "types": [
     "Chicken Noodles",
     "Beef Noodles",
-    "Pancit Canton"
+    "Pancit Canton Original",
+    "Pancit Canton Kalamansi",
+    "Pancit Canton Chilimansi",
+    "Pancit Canton Sweet & Spicy",
+    "Pancit Canton Extra Hot"
   ]
 },
 
@@ -479,7 +545,11 @@
   "name": "Fudgee Barr",
   "category": "general",
   "types": [
-    "Macapuno"
+    "Macapuno",
+    "Choco",
+    "Milk",
+    "Vanilla",
+    "Assorted"
   ]
 },
 
@@ -520,9 +590,12 @@
 },
 
 {
-  "name": "Tops",
+  "name": "Topz",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "Kalamansi",
+    "Blue"
+  ]
 },
 
 {
@@ -540,7 +613,7 @@
 },
 
 {
-  "name": "Tissue",
+  "name": "Jade Bathroom Tissue",
   "category": "cleaning",
   "types": []
 },
@@ -566,19 +639,26 @@
 {
   "name": "Lampein",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "M 15s Generic",
+    "L 15s Generic"
+  ]
 },
 
 {
   "name": "Baby Wipes",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "Tender Love Powder Scent"
+  ]
 },
 
 {
   "name": "EQ",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "Pants XL 40s"
+  ]
 },
 
 {
@@ -630,21 +710,53 @@
 },
 
 {
-  "name": "Juicy",
+  "name": "Juicy Cologne",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "Red 50ml",
+    "Blue 50ml",
+    "Pink 50ml"
+  ]
 },
 
 {
-  "name": "Baby Oil",
+  "name": "Johnson's",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "Baby Oil 50ml Regular"
+  ]
+},
+
+{
+  "name": "Babyflo",
+  "category": "cleaning",
+  "types": [
+    "Baby Oil 50ml Regular"
+  ]
 },
 
 {
   "name": "Silka",
   "category": "cleaning",
   "types": []
+},
+
+{
+  "name": "Charmee",
+  "category": "cleaning",
+  "types": [
+    "Napkin Pink 8s"
+  ]
+},
+
+{
+  "name": "Cream Silk",
+  "category": "cleaning",
+  "types": [
+    "Green",
+    "Pink",
+    "Blue"
+  ]
 },
 
 {

@@ -302,7 +302,11 @@
 {
   "name": "Mogu-Mogu",
   "category": "general",
-  "types": []
+  "types": [
+    "Coconut",
+    "Lychee",
+    "Strawberry"
+  ]
 },
 
 {
@@ -448,7 +452,10 @@
 {
   "name": "JB Bagoong",
   "category": "general",
-  "types": []
+  "types": [
+    "Small",
+    "Big"
+  ]
 },
 
 {
@@ -537,7 +544,8 @@
   "category": "general",
   "types": [
     "Milk",
-    "Strawberry"
+    "Strawberry",
+    "Choco"
   ]
 },
 
@@ -590,6 +598,99 @@
 },
 
 {
+  "name": "Lava Cake",
+  "category": "general",
+  "types": [
+    "Chocolate",
+    "Bavarian"
+  ]
+},
+
+{
+  "name": "Inipit",
+  "category": "general",
+  "types": []
+},
+
+{
+  "name": "Datu Puti",
+  "category": "general",
+  "types": [
+    "Soy Sauce",
+    "Vinegar"
+  ]
+},
+
+{
+  "name": "Maxx Candies",
+  "category": "general",
+  "types": []
+},
+
+{
+  "name": "Eggnog",
+  "category": "general",
+  "types": []
+},
+
+{
+  "name": "Boy Bawang",
+  "category": "general",
+  "types": []
+},
+
+{
+  "name": "Clover",
+  "category": "general",
+  "types": []
+},
+
+{
+  "name": "Cracklings",
+  "category": "general",
+  "types": []
+},
+
+{
+  "name": "Fresca Tuna",
+  "category": "general",
+  "types": [
+    "Afritada",
+    "Caldereta",
+    "Mechado",
+    "Adobo",
+    "Hot and Spicy",
+    "Flakes in Oil"
+  ]
+},
+
+{
+  "name": "Kopiko",
+  "category": "general",
+  "types": [
+    "Black",
+    "Brown",
+    "Blanca"
+  ]
+},
+
+{
+  "name": "Bioderm",
+  "category": "cleaning",
+  "types": [
+    "Green",
+    "Blue",
+    "Pink"
+  ]
+},
+
+{
+  "name": "Happy Cotton",
+  "category": "cleaning",
+  "types": []
+},
+
+{
   "name": "Topz",
   "category": "cleaning",
   "types": [
@@ -602,7 +703,11 @@
   "name": "School Supplies",
   "category": "cleaning",
   "types": [
-    "Easywrite Grade 3"
+    "Easywrite Grade 1",
+    "Easywrite Grade 2",
+    "Easywrite Grade 3",
+    "Easywrite Grade 4",
+    "Panda Ballpen"
   ]
 },
 
@@ -641,7 +746,8 @@
   "category": "cleaning",
   "types": [
     "M 15s Generic",
-    "L 15s Generic"
+    "L 15s Generic",
+    "XL 15s Generic"
   ]
 },
 
@@ -657,6 +763,8 @@
   "name": "EQ",
   "category": "cleaning",
   "types": [
+    "Pants M 40s",
+    "Pants L 40s",
     "Pants XL 40s"
   ]
 },
@@ -738,14 +846,18 @@
 {
   "name": "Silka",
   "category": "cleaning",
-  "types": []
+  "types": [
+    "Papaya Orange",
+    "Papaya Green"
+  ]
 },
 
 {
   "name": "Charmee",
   "category": "cleaning",
   "types": [
-    "Napkin Pink 8s"
+    "Napkin Pink 8s",
+    "Napkin Yellow"
   ]
 },
 

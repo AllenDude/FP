@@ -1,903 +1,650 @@
 [
-{
-  "name": "Homi",
-  "category": "general",
-  "types": ["Beef", "Chicken"]
-},
-{
-  "name": "Arina",
-  "category": "general",
-  "types": ["3rd Class"]
-},
-{
-  "name": "Asin",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Milagrosa",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Hobe",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Komeya",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Nature's Spring",
-  "category": "general",
-  "types": [
-    "Purified 1 Liter"
-  ]
-},
-{
-  "name": "Refresh",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Cobra",
-  "category": "general",
-  "types": [
-    "Yellow",
-    "Green"
-  ]
-},
-{
-  "name": "Sting",
-  "category": "general",
-  "types": [
-    "Red"
-  ]
-},
-{
-  "name": "Mountain Dew",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Crossini",
-  "category": "general",
-  "types": [
-    "Bavarian",
-    "Choco"
-  ]
-},
-{
-  "name": "Silver Swan",
-  "category": "general",
-  "types": [
-    "Soy Sauce 100ml Pouch",
-    "Sukang Puti 100ml Pouch"
-  ]
-},
-{
-  "name": "Loaded",
-  "category": "general",
-  "types": [
-    "Choco",
-    "White"
-  ]
-},
-{
-  "name": "Oishi",
-  "category": "general",
-  "types": [
-    "Prawn",
-    "Red"
-  ]
-},
-{
-  "name": "Patata",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Fish Crackers",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "EC",
-  "category": "general",
-  "types": [
-    "Choco 60g x10",
-    "Milk 60g x10",
-    "Cheese 60g x10"
-  ]
-},
-
-{
-  "name": "Super Crunch",
-  "category": "general",
-  "types": [
-    "55gx10"
-  ]
-},
-{
-  "name": "Tattoos",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Yumshots",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Wrinkles Raisins",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Master Gulaman",
-  "category": "general",
-  "types": [
-    "Buko Pandan x10"
-  ]
-},
-{
-  "name": "Delicious Margarine",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Reno",
-  "category": "general",
-  "types": [
-    "Liver Spread Small"
-  ]
-},
-{
-  "name": "Papa Ketchup",
-  "category": "general",
-  "types": [
-    "Pouch 200g"
-  ]
-},
-{
-  "name": "Chuckie",
-  "category": "general",
-  "types": [
-    "110ml"
-  ]
-},
-{
-  "name": "Vitasoy",
-  "category": "general",
-  "types": [
-    "Original",
-    "Chocolate"
-  ]
-},
-{
-  "name": "Knorr",
-  "category": "general",
-  "types": [
-    "Chicken Cubes",
-    "Pork Cubes",
-    "Beef Cubes",
-    "Sinigang"
-  ]
-},
-{
-  "name": "Gatorade",
-  "category": "general",
-  "types": [
-    "Blue 350ml",
-    "Blue 500ml"
-  ]
-},
-{
-  "name": "Karoke",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Emperador",
-  "category": "general",
-  "types": [
-    "Double Light Lapad"
-  ]
-},
-{
-  "name": "Daily Queso",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "All-Purpose Flour",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Cassava Flour",
-  "category": "general",
-  "types": []
-},
-{
-  "name": "Cornstarch",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Misua",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Unipak",
-  "category": "general",
-  "types": [
-    "Squid",
-    "Mackerel"
-  ]
-},
-
-{
-  "name": "555",
-  "category": "general",
-  "types": [
-    "Sardines"
-  ]
-},
-
-{
-  "name": "Youngs Town",
-  "category": "general",
-  "types": [
-    "Sardines Red 155g",
-    "Sardines Green",
-    "Mackerel"
-  ]
-},
-
-{
-  "name": "Stateside Paminta",
-  "category": "general",
-  "types": [
-    "Durog 50s",
-    "Buo 50s"
-  ]
-},
-
-{
-  "name": "Ajinomoto",
-  "category": "general",
-  "types": [
-    "Vetsin 11g x18",
-    "Vetsin 24g x8"
-  ]
-},
-
-{
-  "name": "Ginisa",
-  "category": "general",
-  "types": [
-    "Mix 8g x16"
-  ]
-},
-
-{
-  "name": "Doreen",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Mogu-Mogu",
-  "category": "general",
-  "types": [
-    "Coconut",
-    "Lychee",
-    "Strawberry"
-  ]
-},
-
-{
-  "name": "Knorr Sinigang",
-  "category": "general",
-  "types": [
-    "Original",
-    "Gabi",
-    "Isda"
-  ]
-},
-
-{
-  "name": "Her-C",
-  "category": "general",
-  "types": [
-    "Laurel",
-    "Star Anis",
-    "Sibut 20g",
-    "Sibut 10g",
-    "Curry Powder",
-    "Sesame Seeds 20g"
-  ]
-},
-
-{
-  "name": "Payless",
-  "category": "general",
-  "types": [
-    "Chicken Noodles",
-    "Beef Noodles",
-    "Xtra Big Pancit Canton Kalamansi",
-    "Xtra Big Pancit Canton Chilimansi",
-    "Xtra Big Pancit Canton Sweet & Spicy"
-  ]
-},
-
-{
-  "name": "Mothers Best Caldereta Mix",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Lasap Gata",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Calumet",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Gawgaw",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Mega Prime Whole Corn",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Argentina",
-  "category": "general",
-  "types": [
-    "Meat Loaf",
-    "Corned Beef"
-  ]
-},
-
-{
-  "name": "Choco Mucho",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Cloud 9",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Beng Beng",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Gumball",
-  "category": "general",
-  "types": [
-    "Jumbo"
-  ]
-},
-
-{
-  "name": "Barnuts",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Lucky Me",
-  "category": "general",
-  "types": [
-    "Chicken Noodles",
-    "Beef Noodles",
-    "Pancit Canton Original",
-    "Pancit Canton Kalamansi",
-    "Pancit Canton Chilimansi",
-    "Pancit Canton Sweet & Spicy",
-    "Pancit Canton Extra Hot"
-  ]
-},
-
-{
-  "name": "Dutchmill",
-  "category": "general",
-  "types": [
-    "Small Saver Pack"
-  ]
-},
-
-{
-  "name": "Richeese",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Richoco",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "JB Bagoong",
-  "category": "general",
-  "types": [
-    "Small",
-    "Big"
-  ]
-},
-
-{
-  "name": "Zest-O",
-  "category": "general",
-  "types": [
-    "Orange",
-    "Apple"
-  ]
-},
-
-{
-  "name": "Koolers",
-  "category": "general",
-  "types": [
-    "Grapes"
-  ]
-},
-
-{
-  "name": "DingDong",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Happy",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Dragon Sid",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Muncher",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Softee",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Flat Tops",
-  "category": "general",
-  "types": [
-    "100s"
-  ]
-},
-
-{
-  "name": "Rebisco",
-  "category": "general",
-  "types": [
-    "Crackers",
-    "Choco",
-    "Pastillas"
-  ]
-},
-
-{
-  "name": "Hansel",
-  "category": "general",
-  "types": [
-    "Crackers",
-    "Milk Sandwich",
-    "Mocha Sandwich"
-  ]
-},
-
-{
-  "name": "Iced Gem",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Doowee Donut",
-  "category": "general",
-  "types": [
-    "Milk",
-    "Strawberry",
-    "Choco"
-  ]
-},
-
-{
-  "name": "Fudgee Barr",
-  "category": "general",
-  "types": [
-    "Macapuno",
-    "Choco",
-    "Milk",
-    "Vanilla",
-    "Assorted"
-  ]
-},
-
-{
-  "name": "Sky Flakes",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Fita",
-  "category": "general",
-  "types": [
-    "Crackers 10s"
-  ]
-},
-
-{
-  "name": "Chelly",
-  "category": "general",
-  "types": [
-    "420s"
-  ]
-},
-
-{
-  "name": "Mentos",
-  "category": "general",
-  "types": [
-    "Mint 420s"
-  ]
-},
-
-{
-  "name": "Snowbear",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Lava Cake",
-  "category": "general",
-  "types": [
-    "Chocolate",
-    "Bavarian"
-  ]
-},
-
-{
-  "name": "Inipit",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Datu Puti",
-  "category": "general",
-  "types": [
-    "Soy Sauce",
-    "Vinegar"
-  ]
-},
-
-{
-  "name": "Maxx Candies",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Eggnog",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Boy Bawang",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Clover",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Cracklings",
-  "category": "general",
-  "types": []
-},
-
-{
-  "name": "Fresca Tuna",
-  "category": "general",
-  "types": [
-    "Afritada",
-    "Caldereta",
-    "Mechado",
-    "Adobo",
-    "Hot and Spicy",
-    "Flakes in Oil"
-  ]
-},
-
-{
-  "name": "Kopiko",
-  "category": "general",
-  "types": [
-    "Black",
-    "Brown",
-    "Blanca"
-  ]
-},
-
-{
-  "name": "Bioderm",
-  "category": "cleaning",
-  "types": [
-    "Green",
-    "Blue",
-    "Pink"
-  ]
-},
-
-{
-  "name": "Happy Cotton",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Topz",
-  "category": "cleaning",
-  "types": [
-    "Kalamansi",
-    "Blue"
-  ]
-},
-
-{
-  "name": "School Supplies",
-  "category": "cleaning",
-  "types": [
-    "Easywrite Grade 1",
-    "Easywrite Grade 2",
-    "Easywrite Grade 3",
-    "Easywrite Grade 4",
-    "Panda Ballpen"
-  ]
-},
-
-{
-  "name": "Kapas",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Jade Bathroom Tissue",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Posporo",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "A&B Candle",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Lastiko",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Lampein",
-  "category": "cleaning",
-  "types": [
-    "M 15s Generic",
-    "L 15s Generic",
-    "XL 15s Generic"
-  ]
-},
-
-{
-  "name": "Baby Wipes",
-  "category": "cleaning",
-  "types": [
-    "Tender Love Powder Scent"
-  ]
-},
-
-{
-  "name": "EQ",
-  "category": "cleaning",
-  "types": [
-    "Pants M 40s",
-    "Pants L 40s",
-    "Pants XL 40s"
-  ]
-},
-
-{
-  "name": "Pantyliners",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "LT Katol",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Hairworks Gel",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Rexona",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Off",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Kiwi",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Bench",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Luis and Pearl",
-  "category": "cleaning",
-  "types": []
-},
-
-{
-  "name": "Juicy Cologne",
-  "category": "cleaning",
-  "types": [
-    "Red 50ml",
-    "Blue 50ml",
-    "Pink 50ml"
-  ]
-},
-
-{
-  "name": "Johnson's",
-  "category": "cleaning",
-  "types": [
-    "Baby Oil 50ml Regular"
-  ]
-},
-
-{
-  "name": "Babyflo",
-  "category": "cleaning",
-  "types": [
-    "Baby Oil 50ml Regular"
-  ]
-},
-
-{
-  "name": "Silka",
-  "category": "cleaning",
-  "types": [
-    "Papaya Orange",
-    "Papaya Green"
-  ]
-},
-
-{
-  "name": "Charmee",
-  "category": "cleaning",
-  "types": [
-    "Napkin Pink 8s",
-    "Napkin Yellow"
-  ]
-},
-
-{
-  "name": "Cream Silk",
-  "category": "cleaning",
-  "types": [
-    "Green",
-    "Pink",
-    "Blue"
-  ]
-},
-
-{
-  "name": "Zonrox",
-  "category": "cleaning",
-  "types": [
-    "Original 100ml",
-    "Original 250ml",
-    "Original 500ml",
-    "Original 1L",
-    "Colorsafe 100ml",
-    "Colorsafe 250ml",
-    "Colorsafe 500ml",
-    "Colorsafe 1L"
-  ]
-},
-
-{
-  "name": "Wings",
-  "category": "cleaning",
-  "types": [
-    "Orange",
-    "Green"
-  ]
-},
-
-{
-  "name": "Pride",
-  "category": "cleaning",
-  "types": []
-}
+  {
+    "name": "Homi",
+    "category": "general",
+    "types": ["Beef", "Chicken"]
+  },
+  {
+    "name": "Arina",
+    "category": "general",
+    "types": ["3rd Class"]
+  },
+  {
+    "name": "Asin",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Milagrosa",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Hobe",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Komeya",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Nature's Spring",
+    "category": "general",
+    "types": ["Purified 1 Liter"]
+  },
+  {
+    "name": "Refresh",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Cobra",
+    "category": "general",
+    "types": ["Yellow", "Green"]
+  },
+  {
+    "name": "Sting",
+    "category": "general",
+    "types": ["Red"]
+  },
+  {
+    "name": "Mountain Dew",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Crossini",
+    "category": "general",
+    "types": ["Bavarian", "Choco"]
+  },
+  {
+    "name": "Silver Swan",
+    "category": "general",
+    "types": ["Soy Sauce 100ml Pouch", "Sukang Puti 100ml Pouch"]
+  },
+  {
+    "name": "Loaded",
+    "category": "general",
+    "types": ["Choco", "White"]
+  },
+  {
+    "name": "Oishi",
+    "category": "general",
+    "types": ["Prawn", "Red"]
+  },
+  {
+    "name": "Patata",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Fish Crackers",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "EC",
+    "category": "general",
+    "types": ["Choco 60g x10", "Milk 60g x10", "Cheese 60g x10"]
+  },
+  {
+    "name": "Super Crunch",
+    "category": "general",
+    "types": ["55gx10"]
+  },
+  {
+    "name": "Tattoos",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Yumshots",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Wrinkles Raisins",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Master Gulaman",
+    "category": "general",
+    "types": ["Buko Pandan x10"]
+  },
+  {
+    "name": "Delicious Margarine",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Reno",
+    "category": "general",
+    "types": ["Liver Spread Small"]
+  },
+  {
+    "name": "Papa Ketchup",
+    "category": "general",
+    "types": ["Pouch 200g"]
+  },
+  {
+    "name": "Chuckie",
+    "category": "general",
+    "types": ["110ml"]
+  },
+  {
+    "name": "Vitasoy",
+    "category": "general",
+    "types": ["Original", "Chocolate"]
+  },
+  {
+    "name": "Knorr",
+    "category": "general",
+    "types": ["Chicken Cubes", "Pork Cubes", "Beef Cubes", "Sinigang"]
+  },
+  {
+    "name": "Gatorade",
+    "category": "general",
+    "types": ["Blue 350ml", "Blue 500ml"]
+  },
+  {
+    "name": "Karoke",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Emperador",
+    "category": "general",
+    "types": ["Double Light Lapad"]
+  },
+  {
+    "name": "Daily Queso",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "All-Purpose Flour",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Cassava Flour",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Cornstarch",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Misua",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Unipak",
+    "category": "general",
+    "types": ["Squid", "Mackerel"]
+  },
+  {
+    "name": "555",
+    "category": "general",
+    "types": ["Sardines"]
+  },
+  {
+    "name": "Youngs Town",
+    "category": "general",
+    "types": ["Sardines Red 155g", "Sardines Green", "Mackerel"]
+  },
+  {
+    "name": "Stateside Paminta",
+    "category": "general",
+    "types": ["Durog 50s", "Buo 50s"]
+  },
+  {
+    "name": "Ajinomoto",
+    "category": "general",
+    "types": ["Vetsin 11g x18", "Vetsin 24g x8"]
+  },
+  {
+    "name": "Ginisa",
+    "category": "general",
+    "types": ["Mix 8g x16"]
+  },
+  {
+    "name": "Doreen",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Mogu-Mogu",
+    "category": "general",
+    "types": ["Coconut", "Lychee", "Strawberry"]
+  },
+  {
+    "name": "Knorr Sinigang",
+    "category": "general",
+    "types": ["Original", "Gabi", "Isda"]
+  },
+  {
+    "name": "Her-C",
+    "category": "general",
+    "types": [
+      "Laurel",
+      "Star Anis",
+      "Sibut 20g",
+      "Sibut 10g",
+      "Curry Powder",
+      "Sesame Seeds 20g"
+    ]
+  },
+  {
+    "name": "Payless",
+    "category": "general",
+    "types": [
+      "Chicken Noodles",
+      "Beef Noodles",
+      "Xtra Big Pancit Canton Kalamansi",
+      "Xtra Big Pancit Canton Chilimansi",
+      "Xtra Big Pancit Canton Sweet & Spicy"
+    ]
+  },
+  {
+    "name": "Mothers Best Caldereta Mix",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Lasap Gata",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Calumet",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Gawgaw",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Mega Prime Whole Corn",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Argentina",
+    "category": "general",
+    "types": ["Meat Loaf", "Corned Beef"]
+  },
+  {
+    "name": "Choco Mucho",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Cloud 9",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Beng Beng",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Gumball",
+    "category": "general",
+    "types": ["Jumbo"]
+  },
+  {
+    "name": "Barnuts",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Lucky Me",
+    "category": "general",
+    "types": [
+      "Chicken Noodles",
+      "Beef Noodles",
+      "Pancit Canton Original",
+      "Pancit Canton Kalamansi",
+      "Pancit Canton Chilimansi",
+      "Pancit Canton Sweet & Spicy",
+      "Pancit Canton Extra Hot"
+    ]
+  },
+  {
+    "name": "Dutchmill",
+    "category": "general",
+    "types": ["Small Saver Pack"]
+  },
+  {
+    "name": "Richeese",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Richoco",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "JB Bagoong",
+    "category": "general",
+    "types": ["Small", "Big"]
+  },
+  {
+    "name": "Zest-O",
+    "category": "general",
+    "types": ["Orange", "Apple"]
+  },
+  {
+    "name": "Koolers",
+    "category": "general",
+    "types": ["Grapes"]
+  },
+  {
+    "name": "DingDong",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Happy",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Dragon Sid",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Muncher",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Softee",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Flat Tops",
+    "category": "general",
+    "types": ["100s"]
+  },
+  {
+    "name": "Rebisco",
+    "category": "general",
+    "types": ["Crackers", "Choco", "Pastillas"]
+  },
+  {
+    "name": "Hansel",
+    "category": "general",
+    "types": ["Crackers", "Milk Sandwich", "Mocha Sandwich"]
+  },
+  {
+    "name": "Iced Gem",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Doowee Donut",
+    "category": "general",
+    "types": ["Milk", "Strawberry", "Choco"]
+  },
+  {
+    "name": "Fudgee Barr",
+    "category": "general",
+    "types": ["Macapuno", "Choco", "Milk", "Vanilla", "Assorted"]
+  },
+  {
+    "name": "Sky Flakes",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Fita",
+    "category": "general",
+    "types": ["Crackers 10s"]
+  },
+  {
+    "name": "Chelly",
+    "category": "general",
+    "types": ["420s"]
+  },
+  {
+    "name": "Mentos",
+    "category": "general",
+    "types": ["Mint 420s"]
+  },
+  {
+    "name": "Snowbear",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Lava Cake",
+    "category": "general",
+    "types": ["Chocolate", "Bavarian"]
+  },
+  {
+    "name": "Inipit",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Datu Puti",
+    "category": "general",
+    "types": ["Soy Sauce", "Vinegar"]
+  },
+  {
+    "name": "Maxx Candies",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Eggnog",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Boy Bawang",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Clover",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Cracklings",
+    "category": "general",
+    "types": []
+  },
+  {
+    "name": "Fresca Tuna",
+    "category": "general",
+    "types": [
+      "Afritada",
+      "Caldereta",
+      "Mechado",
+      "Adobo",
+      "Hot and Spicy",
+      "Flakes in Oil"
+    ]
+  },
+  {
+    "name": "Kopiko",
+    "category": "general",
+    "types": ["Black", "Brown", "Blanca"]
+  },
+  {
+    "name": "Bioderm",
+    "category": "cleaning",
+    "types": ["Green", "Blue", "Pink"]
+  },
+  {
+    "name": "Happy Cotton",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Topz",
+    "category": "cleaning",
+    "types": ["Kalamansi", "Blue"]
+  },
+  {
+    "name": "School Supplies",
+    "category": "cleaning",
+    "types": [
+      "Easywrite Grade 1",
+      "Easywrite Grade 2",
+      "Easywrite Grade 3",
+      "Easywrite Grade 4",
+      "Panda Ballpen"
+    ]
+  },
+  {
+    "name": "Kapas",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Jade Bathroom Tissue",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Posporo",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "A&B Candle",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Lastiko",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Lampein",
+    "category": "cleaning",
+    "types": ["M 15s Generic", "L 15s Generic", "XL 15s Generic"]
+  },
+  {
+    "name": "Baby Wipes",
+    "category": "cleaning",
+    "types": ["Tender Love Powder Scent"]
+  },
+  {
+    "name": "EQ",
+    "category": "cleaning",
+    "types": ["Pants M 40s", "Pants L 40s", "Pants XL 40s"]
+  },
+  {
+    "name": "Pantyliners",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "LT Katol",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Hairworks Gel",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Rexona",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Off",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Kiwi",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Bench",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Luis and Pearl",
+    "category": "cleaning",
+    "types": []
+  },
+  {
+    "name": "Juicy Cologne",
+    "category": "cleaning",
+    "types": ["Red 50ml", "Blue 50ml", "Pink 50ml"]
+  },
+  {
+    "name": "Johnson's",
+    "category": "cleaning",
+    "types": ["Baby Oil 50ml Regular"]
+  },
+  {
+    "name": "Babyflo",
+    "category": "cleaning",
+    "types": ["Baby Oil 50ml Regular"]
+  },
+  {
+    "name": "Silka",
+    "category": "cleaning",
+    "types": ["Papaya Orange", "Papaya Green"]
+  },
+  {
+    "name": "Charmee",
+    "category": "cleaning",
+    "types": ["Napkin Pink 8s", "Napkin Yellow"]
+  },
+  {
+    "name": "Cream Silk",
+    "category": "cleaning",
+    "types": ["Green", "Pink", "Blue"]
+  },
+  {
+    "name": "Zonrox",
+    "category": "cleaning",
+    "types": [
+      "Original 100ml",
+      "Original 250ml",
+      "Original 500ml",
+      "Original 1L",
+      "Colorsafe 100ml",
+      "Colorsafe 250ml",
+      "Colorsafe 500ml",
+      "Colorsafe 1L"
+    ]
+  },
+  {
+    "name": "Wings",
+    "category": "cleaning",
+    "types": ["Orange", "Green"]
+  },
+  {
+    "name": "Pride",
+    "category": "cleaning",
+    "types": []
+  }
 ]

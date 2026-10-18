@@ -78,9 +78,7 @@ function renderItems() {
 
         container.appendChild(card);
 
-        const defaults = (item.types && item.types.length > 0)
-            ? item.types
-            : [item.name];
+        const defaults = getDefaults(item);
 
         const savedRows = saved[item.name] || [];
 
@@ -342,69 +340,184 @@ function updateOutput() {
 /* Export / import code                      */
 /* ========================================= */
 
-// Reads the page into a compact list: [[itemName, [[key, type, qty, flag], ...]], ...]
-function collectState() {
+// The code is a list of entries joined by ";". One entry = one line of the order:
+//
+//   0001 03 1pack 2
+//   |    |  |     |
+//   |    |  |     tick box: 0 none, 1 Buo, 2 Chichirya, 3 Promo
+//   |    |  quantity, exactly as typed
+//   |    type number: 01 = first type of that item, 02 = second...
+//   item number: its position in items.json (0001 = first item)
+//
+// A type that was typed in by hand (or edited) can't be a number, so it uses
+// type 00 and its name goes after the quantity as "@name".
 
-    const state = [];
+const FLAGS = ["", "buo", "chichirya", "promo"];
+
+function getDefaults(item) {
+    return (item.types && item.types.length > 0)
+        ? item.types
+        : [item.name];
+}
+
+function pad(number, length) {
+    return String(number).padStart(length, "0");
+}
+
+function collectCode() {
+
+    const parts = [];
 
     items.forEach((item, index) => {
 
-        const rows = [];
+        const defaults = getDefaults(item);
 
         document
             .querySelectorAll(`#variants-${index} .variant-row`)
             .forEach(row => {
 
-                const qty = row.querySelector(".pieces").value.trim();
+                // ";" splits entries and "@" marks a custom name, so keep them out of the quantity
+                const qty = row
+                    .querySelector(".pieces")
+                    .value
+                    .replace(/[;@\r\n]+/g, ",")
+                    .trim();
 
                 if (!qty) {
                     return;
                 }
 
-                const key = row.dataset.key === "" ? null : row.dataset.key;
+                const typeText = row.querySelector(".variant-name").value;
+                const key = row.dataset.key;
 
-                let flag = "";
-                if (row.querySelector(".buo").checked) flag = "buo";
-                else if (row.querySelector(".chichirya").checked) flag = "chichirya";
-                else if (row.querySelector(".promo").checked) flag = "promo";
+                // A normal, untouched row = a type from items.json
+                const isDefault = key !== "" && typeText === key;
+                const typeNo = isDefault ? defaults.indexOf(key) + 1 : 0;
 
-                rows.push([
-                    key,
-                    row.querySelector(".variant-name").value,
-                    qty,
-                    flag
-                ]);
+                let flagNo = 0;
+                if (row.querySelector(".buo").checked) flagNo = 1;
+                else if (row.querySelector(".chichirya").checked) flagNo = 2;
+                else if (row.querySelector(".promo").checked) flagNo = 3;
+
+                let entry = pad(index + 1, 4) + pad(typeNo, 2) + qty;
+
+                if (typeNo === 0) {
+
+                    const name = typeText.replace(/[;\r\n]+/g, " ").trim();
+
+                    if (name) {
+                        entry += "@" + name;
+                    }
+
+                }
+
+                parts.push(entry + flagNo);
 
             });
 
-        if (rows.length > 0) {
-            state.push([item.name, rows]);
+    });
+
+    return parts.join(";");
+
+}
+
+// Returns { saved, skipped }. Throws if nothing in the code is usable.
+function decodeCode(code) {
+
+    code = code.replace(/[\r\n]+/g, "").trim();
+
+    // Older base64 codes still work
+    if (code.startsWith(CODE_PREFIX)) {
+        return decodeLegacyCode(code);
+    }
+
+    const result = {};
+    let count = 0;
+    let skipped = 0;
+
+    code.split(";").forEach(entry => {
+
+        entry = entry.trim();
+
+        if (!entry) {
+            return;
         }
+
+        const m = entry.match(/^(\d{4})(\d{2})([\s\S]+)([0-3])$/);
+
+        if (!m) {
+            skipped++;
+            return;
+        }
+
+        const item = items[Number(m[1]) - 1];
+        const typeNo = Number(m[2]);
+
+        if (!item) {
+            skipped++;
+            return;
+        }
+
+        let qty = m[3];
+        let key = null;
+        let type = "";
+
+        if (typeNo === 0) {
+
+            const at = qty.indexOf("@");
+
+            if (at !== -1) {
+                type = qty.slice(at + 1);
+                qty = qty.slice(0, at);
+            }
+
+        } else {
+
+            const defaults = getDefaults(item);
+
+            if (typeNo > defaults.length) {
+                skipped++;
+                return;
+            }
+
+            key = defaults[typeNo - 1];
+            type = key;
+
+        }
+
+        qty = qty.trim();
+
+        if (!qty) {
+            skipped++;
+            return;
+        }
+
+        if (!result[item.name]) {
+            result[item.name] = [];
+        }
+
+        result[item.name].push({
+            key: key,
+            type: type,
+            qty: qty,
+            flag: FLAGS[Number(m[4])]
+        });
+
+        count++;
 
     });
 
-    return state;
-
-}
-
-function encodeCode(state) {
-
-    const bytes = new TextEncoder().encode(JSON.stringify(state));
-
-    let binary = "";
-    bytes.forEach(b => binary += String.fromCharCode(b));
-
-    return CODE_PREFIX + btoa(binary);
-
-}
-
-function decodeCode(code) {
-
-    code = code.replace(/\s+/g, "");
-
-    if (!code.startsWith(CODE_PREFIX)) {
+    if (count === 0) {
         throw new Error("Not a valid code");
     }
+
+    return { saved: result, skipped: skipped };
+
+}
+
+function decodeLegacyCode(code) {
+
+    code = code.replace(/\s+/g, "");
 
     const binary = atob(code.slice(CODE_PREFIX.length));
     const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
@@ -431,7 +544,7 @@ function decodeCode(code) {
 
     });
 
-    return result;
+    return { saved: result, skipped: 0 };
 
 }
 
@@ -556,14 +669,12 @@ document
 .getElementById("exportBtn")
 .addEventListener("click", async () => {
 
-    const state = collectState();
+    const code = collectCode();
 
-    if (state.length === 0) {
+    if (!code) {
         showToast("Nothing to export yet");
         return;
     }
-
-    const code = encodeCode(state);
 
     if (await copyText(code)) {
         showToast("Code copied");
@@ -592,17 +703,26 @@ document
         okText: "Import",
         onOk: (code) => {
 
+            let result;
+
             try {
-                saved = decodeCode(code);
+                result = decodeCode(code);
             } catch (e) {
                 showToast("That code didn't work");
                 return;
             }
 
+            saved = result.saved;
+
             renderItems();
             updateOutput();
             closeModal();
-            showToast("Imported");
+
+            showToast(
+                result.skipped > 0
+                    ? `Imported, ${result.skipped} skipped`
+                    : "Imported"
+            );
 
         }
     });

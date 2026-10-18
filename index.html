@@ -12,11 +12,33 @@
 
     <div id="alphabetNav" class="alphabet-nav"></div>
 
+    <div id="topPanel">
+
+        <div class="panel-buttons">
+            <button id="exportBtn">Export</button>
+            <button id="importBtn">Import</button>
+            <button id="copyBtn">Copy List</button>
+            <button id="clearBtn">Clear All</button>
+        </div>
+
+        <textarea id="output" readonly placeholder="Your list shows here"></textarea>
+
+    </div>
+
     <div id="itemsContainer"></div>
 
-    <button id="exportBtn">Export</button>
+    <div id="toast"></div>
 
-    <textarea id="output" readonly></textarea>
+    <div id="modal">
+        <div class="modal-box">
+            <div id="modalTitle" class="modal-title"></div>
+            <textarea id="modalText"></textarea>
+            <div class="modal-buttons">
+                <button id="modalCancel">Cancel</button>
+                <button id="modalOk">OK</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 
